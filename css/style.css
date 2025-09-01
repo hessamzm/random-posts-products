@@ -1,0 +1,47 @@
+/* استایل برای نمایش سه ستون */
+.random-posts-container,
+.random-products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.random-post, .random-product {
+flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    height: 250px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.random-post h4, .random-product h4 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.random-post .post-thumbnail, .random-product .product-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.random-content {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.random-content .random-posts-container,
+.random-content .random-products-container {
+    margin-bottom: 40px;
+}
